@@ -14,7 +14,7 @@
         <div class="px-3 py-2 bg-dark text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <h2 id="h2">Karting </h2>
+                    <h2 id="h2">Karting</h2>
                     <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                         <li>
                             <a href="index.html" class="nav-link text-white">
@@ -45,26 +45,27 @@
     <h1>Iniciar sesión</h1>
 
     <hr class="my-4">
-
-    <div class="col-sm-6">
-        <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="email" placeholder="" value="" required>
-        <div class="invalid-feedback">
-          Se requiere correo electrónico válido
+    <form class="needs-validation" novalidate>
+        <div class="col-sm-6">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="" value="" required>
+            <div class="invalid-feedback">
+                Se requiere correo electrónico válido
+            </div>
         </div>
-      </div>
 
-      <div class="col-sm-6">
-        <label for="password" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="password" placeholder="" value="" required>
-        <div class="invalid-feedback">
-          Se requiere contraseña
+        <div class="col-sm-6">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="" value="" required>
+            <div class="invalid-feedback">
+                Se requiere contraseña
+            </div>
         </div>
-      </div>
 
-    <hr class="my-4">
-
-    <a href="inicio-exito.html"><button class="btn btn-primary" type="submit">Iniciar sesión</button></a>
+        <hr class="my-4">
+        <a href="index-iniciado.html"><button class="btn btn-primary" type="submit">Iniciar sesión</button></a>
+    </form>
+    <br>
     <a href="index.html"><button class="btn btn-secondary" type="submit">Cancelar</button></a>
 
     <div class="container">
@@ -114,6 +115,18 @@
             </ul>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="form-validation.js"></script>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>

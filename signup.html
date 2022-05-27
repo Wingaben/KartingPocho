@@ -37,123 +37,140 @@
             </a>
             </li>
           </ul>
-          
+
         </div>
       </div>
     </div>
   </header>
-    <h1>Registrar cuenta</h1>
+  <h1>Registrar cuenta</h1>
 
-    
-    <hr class="my-4">
 
-    <form class="needs-validation" novalidate>
-      <div class="row g-3">
-        <div class="col-sm-6">
-          <label for="firstName" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+  <hr class="my-4">
+
+  <form class="needs-validation" novalidate>
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <label for="firstName" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+        <div class="invalid-feedback">
+          Se requiere nombre válido
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="lastName" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+        <div class="invalid-feedback">
+          Se requieren apellidos válidos
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="username" class="form-label">Nombre de usuario</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" id="username" required>
           <div class="invalid-feedback">
-            Se requiere nombre válido
-          </div>
-        </div>
-
-        <div class="col-sm-6">
-          <label for="lastName" class="form-label">Apellidos</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-          <div class="invalid-feedback">
-            Se requieren apellidos válidos
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="username" class="form-label">Nombre de usuario</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text">@</span>
-            <input type="text" class="form-control" id="username" required>
-            <div class="invalid-feedback">
-              Se requiere tu nombre de usuario
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-          <div class="invalid-feedback">
-            Se requiere una dirección de correo electrónico
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" required>
-          <div class="invalid-feedback">
-            Se requiere una contraseña válida
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="repeat-password" class="form-label">Repetir contraseña</label>
-          <input type="password" class="form-control" id="repeat-password" required>
-          <div class="invalid-feedback">
-            Se requiere una contraseña válida
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="address" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="address" required>
-          <div class="invalid-feedback">
-            Se requiere una dirección
-          </div>
-        </div>
-
-        <div class="col-12">
-          <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
-          <input type="text" class="form-control" id="address2">
-        </div>
-
-        <div class="col-md-5">
-          <label for="country" class="form-label">Pais</label>
-          <select class="form-select" id="country" required>
-            <option value="">Elija</option>
-            <option>España</option>
-          </select>
-          <div class="invalid-feedback">
-            Seleccione un pais válido
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <label for="state" class="form-label">Comunidad autónoma</label>
-          <select class="form-select" id="state" required>
-            <option value="">Elija...</option>
-            <option>Málaga</option>
-          </select>
-          <div class="invalid-feedback">
-            Seleccione una comunidad autónoma
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <label for="zip" class="form-label">Código postal</label>
-          <input type="text" class="form-control" id="zip" placeholder="" required>
-          <div class="invalid-feedback">
-            Se requiere código postal
+            Se requiere tu nombre de usuario
           </div>
         </div>
       </div>
 
-      <br>
+      <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">
+          Se requiere una dirección de correo electrónico
+        </div>
+      </div>
 
-      <button class="w-100 btn btn-secondary btn-lg" type="submit">Comprobar datos</button>
+      <div class="col-12">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" required>
+        <div class="invalid-feedback">
+          Se requiere una contraseña válida
+        </div>
+      </div>
 
-      <hr class="my-4">
+      <div class="col-12">
+        <label for="repeat-password" class="form-label">Repetir contraseña</label>
+        <input type="password" class="form-control" id="repeat-password" required>
+        <div class="invalid-feedback">
+          Se requiere una contraseña válida
+        </div>
+      </div>
 
-      <a href="reserva-exito.html"><button class="btn btn-primary" type="submit">Crear cuenta</button></a>
-    <a href="index.html"><button class="btn btn-secondary" type="submit">Cancelar</button></a>
-    </form>
-  
+      <div class="col-12">
+        <label for="address" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="address" required>
+        <div class="invalid-feedback">
+          Se requiere una dirección
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+        <input type="text" class="form-control" id="address2">
+      </div>
+
+      <div class="col-md-5">
+        <label for="country" class="form-label">Pais</label>
+        <select class="form-select" id="country" required>
+          <option value="">Elija</option>
+          <option>España</option>
+        </select>
+        <div class="invalid-feedback">
+          Seleccione un pais válido
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="state" class="form-label">Comunidad autónoma</label>
+        <select class="form-select" id="state" required>
+          <option value="">Elija...</option>
+          <option value="op1">Andalucía</option>
+          <option value="op2">Aragón</option>
+          <option value="op3">Asturias</option>
+          <option value="op4">Cantabria</option>
+          <option value="op5">Castilla-La Mancha</option>
+          <option value="op6">Castilla-León</option>
+          <option value="op7">Cataluña</option>
+          <option value="op8">Extremadura </option>
+          <option value="op9">Galicia</option>
+          <option value="op10">Islas Baleares</option>
+          <option value="op11">Islas Canarias</option>
+          <option value="op11">La Rioja</option>
+          <option value="op11">Comunidad de Madrid</option>
+          <option value="op11">Murcia</option>
+          <option value="op11">País Vasco</option>
+          <option value="op11">Valencia</option>
+        </select>
+        <div class="invalid-feedback">
+          Seleccione una comunidad autónoma
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label for="zip" class="form-label">Código postal</label>
+        <input type="text" class="form-control" id="zip" placeholder="" required>
+        <div class="invalid-feedback">
+          Se requiere código postal
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <hr class="my-4">
+
+    <button class="btn btn-primary" type="submit">Crear cuenta
+      <a href="reserva-exito.html"></a>
+    </button>
+    
+  </form>
+  <br>
+  <a href="index.html"><button class="btn btn-secondary" type="submit">Cancelar</button></a>
+
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
