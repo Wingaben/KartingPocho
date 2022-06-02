@@ -1,0 +1,146 @@
+<label for="andalucia">Andalucia (10)</label>
+    <select name="andalucia">
+        <option value=""></option>
+        <option value="op1">Karting Roquetas. Ctra. de Alicun Km 5. Roquetas de Mar (Almería).</option>
+        <option value="op2">Karting COPO. Ctra. Almerimar. Centro Comercial COPO. El Ejido (Almería).</option>
+        <option value="op3">Kartodromo de Cartaya. Cartaya (Huelva). Ctra. al rompido s/n Cartaya.</option>
+        <option value="op4">Karting Sevilla. Alcalá del Río (Sevilla). Ctra. A-8006 Km 6 – 41200.</option>
+        <option value="op5">Fórmula Karting Granada. Peligros (Granada). Pista indoor C/ Almería nº2, Pol Ind. de
+            ASEGRA.</option>
+        <option value="op6">Karting Garrucha. Garrucha (Almería). km 1 04630.</option>
+        <option value="op7">Indoor Karting Málaga (pista Indoor) Pol. Ind. San Luis.</option>
+        <option value="op8">Karting del Sol. Almayate, Torre del Mar (Málaga). N-340 Km 268. </option>
+        <option value="op9">Funny Beach – Marbella (Málaga). Ctra. N340 de Cadiz a Málaga Km 184.</option>
+        <option value="op10">Karting Club Málaga. Mijas-Fuengirola. Camino de Coin s/n.</option>
+        <option value="op11">Karting KartCenter Campillos. A-384, Km. 101, 29320 Campillos, Málaga</option>
+    </select><br>
+    <label for="aragon">Aragón (2)</label>
+    <select name="aragon">
+        <option value=""></option>
+        <option value="op12">Circuito Internacional de Zuera.</option>
+        <option value="op13">La Ciudad del Motor (Motorland).</option>
+    </select><br>
+    <label for="asturias">Asturias (3)</label>
+    <select name="asturias">
+        <option value=""></option>
+        <option value="op14">Karting Pola. Carretera de Santander Km. 390. Pola de Siero (Asturias).</option>
+        <option value="op15">Circuito Soto de Dueñas. Ctra. Nacional 634. Arriondas Km. 8.</option>
+        <option value="op16">Circuito de Asturias. Ctra. Venta del Jamón a Noreña. Ordoño-Siero.</option>
+    </select><br>
+    <label for="cantabria">Cantabria (2)</label>
+    <select name="cantabria">
+        <option value=""></option>
+        <option value="op17">Karting Los Molinos. c/La Ría s/n. Camping Los Molinos. 39180 Noja (Cantabria).</option>
+        <option value="op18">Karting La Roca. Ctra. del Burco, s/n. 39590 Quijas.</option>
+    </select><br>
+    <label for="castillalm">Castilla-La Mancha (3)</label>
+    <select name="castillalm">
+        <option value=""></option>
+        <option value="op19">Karting Barataria, Vereda de Juan Pac, parcela 166. Fuensalida (Toledo).</option>
+        <option value="op20">Karting Correcaminos, Camino Bajolosnuevos s/n 45211 Recas (Toledo).</option>
+        <option value="op21">Karting Cabanillas,  KM.5 de la carretera CM-9100. Cabanillas del Campo (Guadalajara).</option>
+    </select><br>
+    <label for="castillaleon">Castilla-León (3)</label>
+    <select name="castillaleon">
+        <option value=""></option>
+        <option value="op19">Karting Cabañas Raras. Junto al Pol. Industrial de Cabañas Raras. 24412 Cabañas Raras (León)</option>
+        <option value="op20">Karting El Pinar (Vidanes). Calle Nueva – Vidanes (León)</option>
+        <option value="op21">Karting Castroponce. Ctra. N-6 Km. 280. 24712 Saludes de Castroponce (León)</option>
+    </select><br>
+    <label for="catalunya">Cataluña (21)</label>
+    <select name="catalunya">
+        <option value=""></option>
+        <option value="op19">Kartodrom Catalunya. C-17, Km. 17,5. Pol. Ind. El Plà. 08185 Llissà de Vall (Barcelona).</option>
+        <option value="op20">Multipistas Sils. N-II Km 699,5. 17410 Sils.</option>
+        <option value="op21">Circuit d’Osona. Poligon Industrial Malloles, Cabrerès 2.</option>
+        <option value="op21">Karting Club Vendrell. Ctra. N-340 Km 1189.</option>
+        <option value="op21">Karting El Pla. Ctra. C-1313, s/n. 25700 El Pla de Sant Tirs.</option>
+        <option value="op21">ParcMotor. Castelloli (Lleida)</option>
+        <option value="op21">Karting Formula. Carretera de Vidreres, Km 2. Lloret de mar (Girona)</option>
+        <option value="op21">Karting Roses. Ctra. Estacio-Vilajuiga, s/n. Roses (Girona)</option>
+        <option value="op21">Altafulla. Altafulla (Tarragona)</option>
+        <option value="op21">Viladecans Karting Club. Fivaller, 48 1ª 4ª. 08840 Viladecans (Barcelona)</option>
+        <option value="op21">Karting Regencos. Carretera Regencos s/n. 17254 Regencos (Girona)</option>
+        <option value="op21">Indoor Karting Barcelona. Ctra. Laureà Miró, 434 (N-340). 08980 San Feliu de Llobregat (Barcelona)</option>
+        <option value="op21">Karting Salou. Autovía de Salou a Reus Km 2,1. 43840 Salou (Tarragona).</option>
+        <option value="op21">Karting Palamós. Sortie Nord de Palamós. Palamós (Girona).</option>
+        <option value="op21">Karting L’Escala. Ctra. L’Escala-Toroella.</option>
+        <option value="op21">Karting Club Cardedeu. Ctra. Cardedeu a Sant Celoni, Km 5,3. 08440 Cardedeu.</option>
+        <option value="op21">Karting Mora. Comarcas Catalanas, 83. 43740 Mora d’Ebre.</option>
+        <option value="op21">Club Karting Empuriabrava. Zona Aeroport.</option>
+        <option value="op21">Kart Club Cambrils. Verge de Camí, 13. 43850 Cambrils.</option>
+        <option value="op21">Karting Club Blanes. Ctra. Nuevo acceso Costa Brava. 17300 Blanes.</option>
+    </select><br>
+    <label for="extremadura">Extremadura(1)</label>
+    <select name="extremadura">
+        <option value=""></option>
+        <option value="op19">Cáceres Kart. Carretera de Miajadas, km 20,5. Torremocha (Cáceres)</option>
+    </select><br>
+    <label for="galicia">Galicia (2)</label>
+    <select name="galicia">
+        <option value=""></option>
+        <option value="op19">Karting Club Arifran. Ctra. Ferrol-Gijón S/N – Viveiro (Lugo).</option>
+        <option value="op19">Paris-Dakart. Playa Mayor – La Lanzada. San Xenxo.</option>
+    </select><br>
+    <label for="ibalears">Islas Baleares (6)</label>
+    <select name="ibalears">
+        <option value=""></option>
+        <option value="op19">Karting San Antonio. Crta. San Antonio km 14 07820 Sant Antoni de Portmany.</option>
+        <option value="op19">Karting Magaluf. Ctra. Sa Porrasa s/n Cala Figuera (junto Aquapark) – 07182 Magaluf – Calvià (Islas Baleares).</option>
+        <option value="op19">Karting Aeroclub – Menorca. Crta Maó-Sant Lluis, Km.3 (al lado del aeroclub). Menorca.</option>
+        <option value="op19">Go-Karts Santa Eulalia – Ibiza. Ctra. Ibiza – Santa Eulalia km 6. 07840 Santa Eularia des Riu (Ibiza).</option>
+        <option value="op19">Club Karting Can Picafort – Mallorca. Ctra. Alcudia-Arta s/n. Santa Margarita (Islas Baleares).</option>
+        <option value="op19">Circuito El Arenal – Mallorca. Ctra. Llucmajor, Km. 8. El Arenal (Palma de Mallorca).</option>
+        <option value="op19">Karting Castillo Menorca – Menorca. Carretera de Ciutadella a Maò, Km 35, 07760 Ciutadella de Menorca, (Islas Baleares).</option>
+    </select><br>
+    <label for="icanarias">Islas Canarias (3)</label>
+    <select name="icanarias">
+        <option value=""></option>
+        <option value="op19">Gran Karting Club Lanzarote. Ctra. LZ-2 Km.7 Arrecife – Tias.</option>
+        <option value="op19">Gran Karting Club Gran Canaria. Ctra. C-812 Km 46. Tarajalillo (San Bartolomé de Tirajana).</option>
+        <option value="op19">Karting Tenerife. Ctra. del Cho Km 66. Arona (Tenerife).</option>
+    </select><br>
+    <label for="rioja">La Rioja (1)</label>
+    <select name="rioja">
+        <option value=""></option>
+        <option value="op19">Karting Indoor Logroño. c/ Avda de Aragon 20 – P.I. La Portalada. 26006 Logroño (La Rioja).</option>
+    </select><br>
+    <label for="cmadrid">Comunidad de Madrid (8)</label>
+    <select name="cmadrid">
+        <option value=""></option>
+        <option value="op19">Karting Soto. Carretera de Colmenar Viejo a Soto Km. 6 (Ctra. Miraflores, Km.40,4). Soto del Real (Madrid)</option>
+        <option value="op19">Karting HenaKart. Carretera de Torrejón de Ardoz a Loeches, Km. 3,600. San Fernando de Henares (Madrid).</option>
+        <option value="op19">Karting Burgueño. Nacional I, Km. 45,8. El Molar (Madrid).</option>
+        <option value="op19">Indoor Ice Karting. Palacio del Hielo CIRCUS, Avda. Juan Carlos !, 46.</option>
+        <option value="op19">Go Karts Safari Madrid. Carretera Aldea del Fresno a Villa del Prado M-507, Km. 22. Aldea del Fresno (Madrid).</option>
+        <option value="op19">Asupark. Crta.de Boadilla a Villaviciosa M-501, Km. 6.0. Villaviciosa de Odón (Madrid).</option>
+        <option value="op19">Carlos Sainz Center (pista indoor) Parque Empresarial Europolis, Calle V 28230 Las Rozas (Madrid).</option>
+        <option value="op19">Karting Club Los Santos. Ctra. Santorcaz Km 1n Los de la Humosa Madrid.</option>
+    </select><br>
+    <label for="murcia">Murcia (1)</label>
+    <select name="murcia">
+        <option value=""></option>
+        <option value="op19">La Manga Go-Kart. Ctra.de la Manga Km 14. La Manga del Mar Menor.</option>
+    </select><br>
+    <label for="pvasco">País Vasco (3)</label>
+    <select name="pvasco">
+        <option value=""></option>
+        <option value="">Pro-Karting Euskadi. B.º de San Mamés, s/n. Ciervana (Vizcaya).</option>
+        <option value="">OcioKart. Ondazarros 3 48840 Güeñes (Vizcaya).</option>
+        <option value="">Karting Olaberria. Behekoetxe Haundialdela 20212 Olaberria (Guipuzcoa).</option>
+    </select><br>
+    <label for="valencia">Valencia (11)</label>
+    <select name="valencia">
+        <option value=""></option>
+        <option value="">Villena Chicharra Karts. Ctra. Villena-Yecla, Km 1.2. 03400 – Villena (Alicante).</option>
+        <option value="">Karting Raventós Cno. Serratella s/n. Almenara Playa (Castellón de la Plana).</option>
+        <option value="">Karting La Nucia. Alberca – La Nucia (Alicante).</option>
+        <option value="">Karting La Font Santa. Ctra. Moraira Teulada, km. 3 03725 Teulada (Alicante).</option>
+        <option value="">Karting La Cala. Crta. Alicante – Valencia, Km. 116 03500 Benidorm (Alicante).</option>
+        <option value="">Karting Finestrat. Partida la Folla s/n 03509 Finestrat – Benidorm (Alicante).</option>
+        <option value="">Go-Karts San Fulgencio. Crta. Alicante – Cartagena, Km. 74 Guardamar del Segura (Alicante).</option>
+        <option value="">Go Karts Orihuela Costa. Carretera de Cartagena Km. 5.700 03189 Torrevieja (Alicante).</option>
+        <option value="">Karting Peñiscola Avda. Estación, Km. 0,8 s/n 12598 Peñíscola (Castellón de la Plana).</option>
+        <option value="">Castellon Benikarts Ctra. N-340 Km 78 Benicassim.</option>
+        <option value="">Karting Marlon Kart Ctra. N-340 Valencia-Barcelona Km 993 12594 Oropesa del Mar (Castellón de la Plana).</option>
+    </select><br>

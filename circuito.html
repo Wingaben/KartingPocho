@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <title>Registrar</title>
+    <title>Reservar circuito</title>
 </head>
 
 <body class="container-md border border-primary">
@@ -41,11 +41,108 @@
             </div>
         </div>
     </header>
-    <label for="email">Correo</label><br>
-    <input type="email" id="email" name="email" value="" required="true"><br>
-    <label for="password">Contraseña</label><br>
-    <input type="password" id="password" name="password" value="" required="true"><br><br>
-    <a href="index.html"><button type="button" class="btn btn-primary">Aceptar</button></a>
+    <h1>Reservar circuito</h1>
+
+    <hr class="my-4">
+
+    <legend>Elegir circuito</legend>
+    <label for="andalucia">Comunidad autónoma</label>
+    <select name="andalucia">
+        <option value=""></option>
+        <option value="op1">Andalucía</option>
+        <option value="op2">Aragón</option>
+        <option value="op3">Asturias</option>
+        <option value="op4">Cantabria</option>
+        <option value="op5">Castilla-La Mancha</option>
+        <option value="op6">Castilla-León</option>
+        <option value="op7">Cataluña</option>
+        <option value="op8">Extremadura </option>
+        <option value="op9">Galicia</option>
+        <option value="op10">Islas Baleares</option>
+        <option value="op11">Islas Canarias</option>
+        <option value="op11">La Rioja</option>
+        <option value="op11">Comunidad de Madrid</option>
+        <option value="op11">Murcia</option>
+        <option value="op11">País Vasco</option>
+        <option value="op11">Valencia</option>
+    </select></br>
+    <label for="Circuito">Circuito</label>
+    <select name="Circuito">
+        <option value=""></option>
+        <option value="op1">Karting Roquetas. Ctra. de Alicun Km 5. Roquetas de Mar (Almería).</option>
+        <option value="op2">Karting COPO. Ctra. Almerimar. Centro Comercial COPO. El Ejido (Almería).</option>
+        <option value="op3">Kartodromo de Cartaya. Cartaya (Huelva). Ctra. al rompido s/n Cartaya.</option>
+        <option value="op4">Karting Sevilla. Alcalá del Río (Sevilla). Ctra. A-8006 Km 6 – 41200.</option>
+        <option value="op5">Fórmula Karting Granada. Peligros (Granada). Pista indoor C/ Almería nº2, Pol Ind. de
+            ASEGRA.</option>
+        <option value="op6">Karting Garrucha. Garrucha (Almería). km 1 04630.</option>
+        <option value="op7">Indoor Karting Málaga (pista Indoor) Pol. Ind. San Luis.</option>
+        <option value="op8">Karting del Sol. Almayate, Torre del Mar (Málaga). N-340 Km 268. </option>
+        <option value="op9">Funny Beach – Marbella (Málaga). Ctra. N340 de Cadiz a Málaga Km 184.</option>
+        <option value="op10">Karting Club Málaga. Mijas-Fuengirola. Camino de Coin s/n.</option>
+        <option value="op11">Karting KartCenter Campillos. A-384, Km. 101, 29320 Campillos, Málaga</option>
+    </select></br>
+
+    <hr class="my-4">
+
+    <legend>Elegir fechas</legend>
+    <label for="date-init">Fecha inicio</label>
+    <input type="date" name="date" id="date-init" value="today" required="true">
+
+    <label for="date-fin">Fecha fin</label>
+    <input type="date" name="date" id="date-fin" value="today" required="true"><br>
+
+    <hr class="my-4">
+
+    <div class="form-check">
+        <fieldset>
+            <legend>Método de pago</legend>
+            <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="credit">Tarjeta de crédito</label><br />
+            <input type="radio" id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="debit">Tarjeta de débito</label><br />
+            <input type="radio" id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="paypal">PayPal</label><br />
+        </fieldset>
+    </div>
+
+    <hr class="my-4">
+
+    <legend>Datos bancarios</legend>
+
+    <div class="row gy-3">
+        <div class="col-md-6">
+            <label for="cc-name" class="form-label">Nombre completo del propietario</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <div class="invalid-feedback">
+                Nombre completo requerido
+            </div>
+            <label for="cc-number" class="form-label">Número de tarjeta</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+                Numero de tarjeta de crédito requerido
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Expiración</label>
+            <input type="date" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+                Fecha de expiración requerida
+            </div>
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+                Código de seguridad requerido
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <a href="reserva-exito.html"><button class="btn btn-primary" type="submit">Reservar</button></a>
+    <a href="reservar.html"><button class="btn btn-secondary" type="submit">Cancelar</button></a>
+
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
