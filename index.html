@@ -1,5 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+ body {
+
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.popup .content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-150%) scale(0);
+ width: 350px;
+ height: 430px;
+ z-index: 2;
+ text-align: center;
+ padding: 50px 0px 0px 0px;
+ border-radius: 5px;
+ background: #dfdfdf;
+ 
+ z-index: 1;
+}
+
+.popup .close-btn {
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ width: 30px;
+ height: 30px;
+ color: black;
+ font-size: 20px;
+ border-radius: 50%;
+ padding: 0px 5px 20px 5px;
+ background: rgb(72, 182, 145);
+ 
+ }
+
+.popup.active .content {
+transition: all 300ms ease-in-out;
+transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+a {
+ font-weight: 600;
+ color: rgb(19, 50, 225);
+}
+
+.input-field .validate {
+padding: 20px;
+font-size: 16px;
+border-radius: 5px;
+border: none;
+margin-bottom: 15px;
+color: #000000;
+background: #ffffff;
+border: 2px solid rgb(214, 214, 214);
+width: 270px;
+outline: none;
+}
+
+
+
+.first-button {
+color: rgb(3, 48, 146);
+font-size: 20px;
+font-weight: 500;
+padding: 15px 50px;
+border-radius: 5px;
+border: none;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #dadadb;
+ 
+transition: box-shadow .35s ease !important;
+outline: none;
+}
+
+.first-button:active {  
+background-color: rgb(2, 42, 112);
+color: #fff;
+border: none;
+}
+
+.second-button {
+color: black;
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+padding: 15px 40px;
+border-radius: 5px;
+border: none;
+background: rgb(72, 182, 145);;
+ 
+transition: box-shadow .35s ease !important;
+outline: none;
+}
+
+.second-button:active{
+background: linear-gradient(145deg,#222222, #292929);
+ 
+border: none;
+outline: none;
+}
+
+
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +142,7 @@
                                 Inicio
                             </a>
                         </li>
-                        <a href="reservar.html" class="nav-link text-white">
+                        <a button onclick="togglePopup()"  class="nav-link text-white">
                             <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 16 16" fill="white">
                                 <path
@@ -37,14 +152,15 @@
                         </a>
                     </ul>
                     <ul class="nav">
-                        <a href="login.html" class="nav-link text-white">
+                  <!--      <a href="login.html" class="nav-link text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                 <path fill-rule="evenodd"
                                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                             </svg> Perfil
-                        </a>
+                        </a>   
+						-->
                         <a href="login.html"><button type="button" class="btn btn-light text-dark me-2">Iniciar
                                 sesión</button></a>
                         <a href="signup.html"><button type="button" class="btn btn-primary">Registrar</button></a>
@@ -52,7 +168,28 @@
                 </div>
             </div>
     </header>
-
+<body>
+ <div class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()">
+     x</div>
+     
+<p>Por favor, inicie sesión </p><p>antes de hacer una reserva<p> 
+  <div class="input-field"><input placeholder="Correo" class="validate"></div>
+  <div class="input-field"><input placeholder="Contraseña" class="validate"></div>
+    <a href="index-iniciado.html"><button class="second-button">Iniciar sesión</button></a>
+    <p>No tienes cuenta? <a href="signup.html">Regístrate</a></p>
+      
+     
+   </div>
+  </div>
+  <button onclick="togglePopup()" class="first-button">Sign In</button>
+<script>
+ function togglePopup() {
+ document.getElementById("popup-1")
+  .classList.toggle("active");
+}
+</script>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active"
@@ -73,7 +210,7 @@
                     <div class="carousel-caption text-start">
                         <h1>Carrera</h1>
                         <p>No te puedes perder esta experiencia.</p>
-                        <p><a class="btn btn-lg btn-primary" href="carrera.html">Reservar</a></p>
+                        <p><a button onclick="togglePopup()" class="btn btn-lg btn-primary">Reservar</a></p>
                     </div>
                 </div>
             </div>
@@ -88,7 +225,8 @@
                     <div class="carousel-caption">
                         <h1>Vehículo deportivo</h1>
                         <p>No te puedes perder esta experiencia.</p>
-                        <p><a class="btn btn-lg btn-primary" href="vehiculo.html">Reservar</a></p>
+						
+                        <p><a button onclick="togglePopup()" class="btn btn-lg btn-primary">Reservar</a></p>
                     </div>
                 </div>
             </div>
@@ -102,7 +240,7 @@
                     <div class="carousel-caption text-end">
                         <h1>Circuito</h1>
                         <p>Vende un riñón si hace falta, no te puedes perder esta experiencia.</p>
-                        <p><a class="btn btn-lg btn-primary" href="circuito.html">Reservar</a></p>
+                        <p><a button onclick="togglePopup()" class="btn btn-lg btn-primary" >Reservar</a></p>
                     </div>
                 </div>
             </div>
