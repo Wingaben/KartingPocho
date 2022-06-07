@@ -12,6 +12,11 @@
 
     <script>
         $(function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            $('[data-toggle="tooltip"]').tooltip()
             var options = $("#circuito").html();
             $("#comunidad").change(function(e) {
                 var text = $("#comunidad :selected").text();
@@ -22,6 +27,36 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        function EnableDisableTB() {
+            var credit = document.getElementById("credit");
+            var ccnumber = document.getElementById("cc-number");
+            var ccname = document.getElementById("cc-name");
+            var ccmonth = document.getElementById("cc-month");
+            var ccyear = document.getElementById("cc-year");
+            var cccvv = document.getElementById("cc-cvv");
+
+            ccnumber.disabled = credit.checked ? false : true;
+            ccnumber.value = "";
+
+
+            ccname.disabled = credit.checked ? false : true;
+            ccname.value = "";
+            if (!ccname.disabled) {
+                ccname.focus();
+            }
+            ccmonth.disabled = credit.checked ? false : true;
+            ccmonth.value = "";
+
+            ccyear.disabled = credit.checked ? false : true;
+            ccyear.value = "";
+
+            cccvv.disabled = credit.checked ? false : true;
+            cccvv.value = "";
+        }
+    </script>
+
 
 </head>
 
@@ -217,12 +252,13 @@
     <div class="form-check">
         <fieldset>
             <legend>Método de pago</legend>
-            <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+
+            <input type="radio" id="cash" name="paymentMethod" type="radio" class="form-check-input" checked onclick="EnableDisableTB()">
+            <label class="form-check-label" for="debit">Efectivo</label><br />
+
+            <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" onclick="EnableDisableTB()">
             <label class="form-check-label" for="credit">Tarjeta de crédito</label><br />
-            <input type="radio" id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-            <label class="form-check-label" for="debit">Tarjeta de débito</label><br />
-            <input type="radio" id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-            <label class="form-check-label" for="paypal">PayPal</label><br />
+
         </fieldset>
     </div>
 
@@ -233,25 +269,67 @@
     <div class="row gy-3">
         <div class="col-md-6">
             <label for="cc-name" class="form-label">Nombre completo del propietario</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <input type="text" class="form-control" id="cc-name" disabled="disabled" placeholder="" required>
             <div class="invalid-feedback">
                 Nombre completo requerido
             </div>
             <label for="cc-number" class="form-label">Número de tarjeta</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <input type="text" class="form-control" id="cc-number" disabled="disabled" placeholder="" required>
             <div class="invalid-feedback">
                 Numero de tarjeta de crédito requerido
             </div>
         </div>
+    </div>
 
-        <div class="col-md-3">
-            <label for="cc-expiration" class="form-label">Expiración</label>
-            <input type="date" class="form-control" id="cc-expiration" placeholder="" required>
+    <div class="row gy-3">
+        <div class="col-md-2">
+            <label for="cc-month" class="form-label">Mes</label>
+            <select class="form-select" name="Month" id="cc-month" disabled="disabled" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
             <div class="invalid-feedback">
-                Fecha de expiración requerida
+                Mes de caducidad requerido
             </div>
+        </div>
+        <div class="col-md-2">
+            <label for="cc-year" class="form-label">Año</label>
+            <select class="form-select" name="Year" id="cc-year" disabled="disabled" required>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+            </select>
+            <div class="invalid-feedback">
+                Año de caducidad requerido
+            </div>
+        </div>
+        <div class="col-md-2">
             <label for="cc-cvv" class="form-label">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="input-group">
+                <span class="input-group-text" id="cc-cvv-informacion" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="Es un código de 3 dígitos que aparece en la parte posterior de las tarjetas Visa y Mastercard.</br>Para las American Express es un código de 4 dígitos situado en la parte frontal.">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                </span>
+                <input type="text" class="form-control" id="cc-cvv" disabled="disabled" placeholder="" required>
+            </div>
             <div class="invalid-feedback">
                 Código de seguridad requerido
             </div>
