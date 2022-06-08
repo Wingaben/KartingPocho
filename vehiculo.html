@@ -60,10 +60,10 @@
         <div class="px-3 py-2 bg-dark text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <h2 id="h2">Karting </h2>
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <h2 id="h2">KartingPocho</h2>
+                    <ul class="nav me-auto">
                         <li>
-                            <a href="index.html" class="nav-link text-white">
+                            <a href="index-iniciado.html" class="nav-link text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="bi d-block mx-auto mb-1" width="24" height="24" fill="white" viewBox="0 0 16 16">
                                     <path
                                         d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
@@ -79,6 +79,18 @@
                         </a>
                         </li>
                     </ul>
+                    <ul class="nav">
+                        <a href="perfil.html" class="nav-link text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg> Perfil
+                        </a>
+                        <a href="logout.html"><button type="button" class="btn btn-light text-dark me-2">Cerrar
+                                sesión</button>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -87,29 +99,8 @@
     <h1>Reservar vehículo deportivo</h1>
 
     <hr class="my-4">
-
     <legend>Elegir circuito</legend>
 
-    <label for="comunidad">Comunidad autónoma</label>
-    <select name="comunidad" id="comunidad">
-        <option value=""></option>
-        <option value="op1">Andalucía</option>
-        <option value="op2">Aragón</option>
-        <option value="op3">Asturias</option>
-        <option value="op4">Cantabria</option>
-        <option value="op5">Castilla - La Mancha</option>
-        <option value="op6">Castilla y León</option>
-        <option value="op7">Cataluña</option>
-        <option value="op8">Extremadura </option>
-        <option value="op9">Galicia</option>
-        <option value="op10">Islas Baleares</option>
-        <option value="op11">Islas Canarias</option>
-        <option value="op12">La Rioja</option>
-        <option value="op13">Comunidad de Madrid</option>
-        <option value="op14">Murcia</option>
-        <option value="op15">País Vasco</option>
-        <option value="op16">Valencia</option>
-    </select></br>
     <label for="Circuito">Circuito</label>
     <select name="Circuito" id="circuito">
         <option value="">                              </option>
@@ -232,7 +223,7 @@
         <option value="op10">Mercedes AMG GT 63s</option>
         <option value="op11">Seat Leon Cupra R</option>
         <option value="op12">Honda Civic Type R</option>
-        
+
     </select><br>
 
     <hr class="my-4">
@@ -243,7 +234,48 @@
 
 
     <hr class="my-4">
+    <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Tu carrito</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <h6 class="my-0">Circuito</h6>
+                    <small class="text-muted">Pago de entrada del circuito</small>
+                </div>
+                <span class="text-muted">20€</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <h6 class="my-0">Tipo de temporada</h6>
+                    <small class="text-muted">Suplemento por temporada alta</small>
+                </div>
+                <span class="text-muted">50€</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <h6 class="my-0">Vehículo deportivo</h6>
+                    <small class="text-muted">Alquiler vehículo deportivo</small>
+                </div>
+                <span class="text-muted">500€</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+                <div class="text-success">
+                    <h6 class="my-0">Código de descuento</h6>
+                    <small>UN5SON6CREDITOS</small>
+                </div>
+                <span class="text-success">−50€</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Total (EUR)</span>
+                <strong>520€</strong>
+            </li>
+        </ul>
 
+    </div>
+    <hr class="my-4">
     <div class="form-check">
         <fieldset>
             <legend>Método de pago</legend>
@@ -314,13 +346,16 @@
                 Año de caducidad requerido
             </div>
         </div>
+
         <div class="col-md-2">
             <label for="cc-cvv" class="form-label">CVV</label>
             <div class="input-group">
                 <span class="input-group-text" id="cc-cvv-informacion" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="Es un código de 3 dígitos que aparece en la parte posterior de las tarjetas Visa y Mastercard.</br>Para las American Express es un código de 4 dígitos situado en la parte frontal.">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                     </svg>
                 </span>
                 <input type="text" class="form-control" id="cc-cvv" disabled="disabled" placeholder="" required>
