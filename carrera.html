@@ -108,9 +108,10 @@
 
     <hr class="my-4">
 
-    <legend>Elegir carrera</legend>
+   
     <form class="needs-validation" novalidate action="reserva-exito.html">
-        
+		<fieldset>
+        <legend>Elegir carrera</legend>
         <label for="comunidad">Comunidad autónoma</label>
         <select name="comunidad" id="comunidad" required>
             <option value=""></option>
@@ -131,6 +132,7 @@
             <option value="op15">País Vasco</option>
             <option value="op16">Valencia</option>
         </select>
+		</fieldset>
         <div id="error" class="invalid-feedback">Por favor, seleccione una comunidad autónoma.</div>
     </br>
         <label for="Circuito">Circuito</label>
