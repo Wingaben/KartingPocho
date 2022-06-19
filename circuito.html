@@ -12,12 +12,12 @@
 
     <script>
         $(function() {
-            var options = $("#circuito").html();
+            var options = $("#Circuito").html();
             $("#comunidad").change(function(e) {
                 var text = $("#comunidad :selected").text();
-                $("#circuito").html(options);
+                $("#Circuito").html(options);
                 if (text == "-Select-") return;
-                $('#circuito :not([value^="' + text.substr(0, 17) + '"])').remove();
+                $('#Circuito :not([value^="' + text.substr(0, 17) + '"])').remove();
 
             });
         });
@@ -70,25 +70,28 @@
                                 </svg> Inicio
                             </a>
                         </li>
-                        <a href="reservar.html" class="nav-link text-white">
-                            <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="white">
+                        <li>
+                            <a href="reservar.html" class="nav-link text-white">
+                                <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="white">
                                 <path
                                     d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                             </svg> Reservar
-                        </a>
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav">
-                        <a href="perfil.html" class="nav-link text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <li>
+                            <a href="perfil.html" class="nav-link text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                 <path fill-rule="evenodd"
                                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                             </svg> Perfil
-                        </a>
-                        <a href="logout.html"><button type="button" class="btn btn-light text-dark me-2">Cerrar
+                            </a>
+                            <a href="logout.html"><button type="button" class="btn btn-light text-dark me-2">Cerrar
                                 sesión</button>
                         </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -98,278 +101,327 @@
 
     <hr class="my-4">
 
-    <legend>Elegir circuito</legend>
-    <label for="comunidad">Comunidad autónoma</label>
-    <select name="comunidad" id="comunidad">
-        <option value=""></option>
-        <option value="op1">Andalucía</option>
-        <option value="op2">Aragón</option>
-        <option value="op3">Asturias</option>
-        <option value="op4">Cantabria</option>
-        <option value="op5">Castilla - La Mancha</option>
-        <option value="op6">Castilla y León</option>
-        <option value="op7">Cataluña</option>
-        <option value="op8">Extremadura </option>
-        <option value="op9">Galicia</option>
-        <option value="op10">Islas Baleares</option>
-        <option value="op11">Islas Canarias</option>
-        <option value="op12">La Rioja</option>
-        <option value="op13">Comunidad de Madrid</option>
-        <option value="op14">Murcia</option>
-        <option value="op15">País Vasco</option>
-        <option value="op16">Valencia</option>
-    </select></br>
-    <label for="Circuito">Circuito</label>
-    <select name="Circuito" id="circuito">
-        <option value="">                              </option>
-        <option value="Andalucía"></option>
-        <option value="Andalucía">Karting Roquetas. Ctra. de Alicun Km 5. Roquetas de Mar (Almería).</option>
-        <option value="Andalucía">Karting COPO. Ctra. Almerimar. Centro Comercial COPO. El Ejido (Almería).</option>
-        <option value="Andalucía">Kartodromo de Cartaya. Cartaya (Huelva). Ctra. al rompido s/n Cartaya.</option>
-        <option value="Andalucía">Karting Sevilla. Alcalá del Río (Sevilla). Ctra. A-8006 Km 6 – 41200.</option>
-        <option value="Andalucía">Fórmula Karting Granada. Peligros (Granada). Pista indoor C/ Almería nº2, Pol Ind. de ASEGRA.</option>
-        <option value="Andalucía">Karting Garrucha. Garrucha (Almería). km 1 04630.</option>
-        <option value="Andalucía">Indoor Karting Málaga (pista Indoor) Pol. Ind. San Luis.</option>
-        <option value="Andalucía">Karting del Sol. Almayate, Torre del Mar (Málaga). N-340 Km 268. </option>
-        <option value="Andalucía">Funny Beach – Marbella (Málaga). Ctra. N340 de Cadiz a Málaga Km 184.</option>
-        <option value="Andalucía">Karting Club Málaga. Mijas-Fuengirola. Camino de Coin s/n.</option>
-        <option value="Andalucía">Karting KartCenter Campillos. A-384, Km. 101, 29320 Campillos, Málaga</option>
-        <option value="Aragón"></option>
-        <option value="Aragón">Circuito Internacional de Zuera.</option>
-        <option value="Aragón">La Ciudad del Motor (Motorland).</option>
-        <option value="Asturias"></option>
-        <option value="Asturias">Karting Pola. Carretera de Santander Km. 390. Pola de Siero (Asturias).</option>
-        <option value="Asturias">Circuito Soto de Dueñas. Ctra. Nacional 634. Arriondas Km. 8.</option>
-        <option value="Asturias">Circuito de Asturias. Ctra. Venta del Jamón a Noreña. Ordoño-Siero.</option>
-        <option value="Cantabria"></option>
-        <option value="Cantabria">Karting Los Molinos. c/La Ría s/n. Camping Los Molinos. 39180 Noja (Cantabria).</option>
-        <option value="Cantabria">Karting La Roca. Ctra. del Burco, s/n. 39590 Quijas.</option>
-        <option value="Castilla - La Mancha"></option>
-        <option value="Castilla - La Mancha">Karting Barataria, Vereda de Juan Pac, parcela 166. Fuensalida (Toledo).</option>
-        <option value="Castilla - La Mancha">Karting Correcaminos, Camino Bajolosnuevos s/n 45211 Recas (Toledo).</option>
-        <option value="Castilla - La Mancha">Karting Cabanillas,  KM.5 de la carretera CM-9100. Cabanillas del Campo (Guadalajara).</option>
-        <option value="Castilla y León"></option>
-        <option value="Castilla y León">Karting Cabañas Raras. Junto al Pol. Industrial de Cabañas Raras. 24412 Cabañas Raras (León)</option>
-        <option value="Castilla y León">Karting El Pinar (Vidanes). Calle Nueva – Vidanes (León)</option>
-        <option value="Castilla y León">Karting Castroponce. Ctra. N-6 Km. 280. 24712 Saludes de Castroponce (León)</option>
-        <option value="Cataluña"></option>
-        <option value="Cataluña">Kartodrom Catalunya. C-17, Km. 17,5. Pol. Ind. El Plà. 08185 Llissà de Vall (Barcelona).</option>
-        <option value="Cataluña">Multipistas Sils. N-II Km 699,5. 17410 Sils.</option>
-        <option value="Cataluña">Circuit d’Osona. Poligon Industrial Malloles, Cabrerès 2.</option>
-        <option value="Cataluña">Karting Club Vendrell. Ctra. N-340 Km 1189.</option>
-        <option value="Cataluña">Karting El Pla. Ctra. C-1313, s/n. 25700 El Pla de Sant Tirs.</option>
-        <option value="Cataluña">ParcMotor. Castelloli (Lleida)</option>
-        <option value="Cataluña">Karting Formula. Carretera de Vidreres, Km 2. Lloret de mar (Girona)</option>
-        <option value="Cataluña">Karting Roses. Ctra. Estacio-Vilajuiga, s/n. Roses (Girona)</option>
-        <option value="Cataluña">Altafulla. Altafulla (Tarragona)</option>
-        <option value="Cataluña">Viladecans Karting Club. Fivaller, 48 1ª 4ª. 08840 Viladecans (Barcelona)</option>
-        <option value="Cataluña">Karting Regencos. Carretera Regencos s/n. 17254 Regencos (Girona)</option>
-        <option value="Cataluña">Indoor Karting Barcelona. Ctra. Laureà Miró, 434 (N-340). 08980 San Feliu de Llobregat (Barcelona)</option>
-        <option value="Cataluña">Karting Salou. Autovía de Salou a Reus Km 2,1. 43840 Salou (Tarragona).</option>
-        <option value="Cataluña">Karting Palamós. Sortie Nord de Palamós. Palamós (Girona).</option>
-        <option value="Cataluña">Karting L’Escala. Ctra. L’Escala-Toroella.</option>
-        <option value="Cataluña">Karting Club Cardedeu. Ctra. Cardedeu a Sant Celoni, Km 5,3. 08440 Cardedeu.</option>
-        <option value="Cataluña">Karting Mora. Comarcas Catalanas, 83. 43740 Mora d’Ebre.</option>
-        <option value="Cataluña">Club Karting Empuriabrava. Zona Aeroport.</option>
-        <option value="Cataluña">Kart Club Cambrils. Verge de Camí, 13. 43850 Cambrils.</option>
-        <option value="Cataluña">Karting Club Blanes. Ctra. Nuevo acceso Costa Brava. 17300 Blanes.</option>
-        <option value="Extremadura"></option>
-        <option value="Extremadura">Cáceres Kart. Carretera de Miajadas, km 20,5. Torremocha (Cáceres)</option>
-        <option value="Galicia"></option>
-        <option value="Galicia">Karting Club Arifran. Ctra. Ferrol-Gijón S/N – Viveiro (Lugo).</option>
-        <option value="Galicia">Paris-Dakart. Playa Mayor – La Lanzada. San Xenxo.</option>
-        <option value="Islas Baleares"></option>
-        <option value="Islas Baleares">Karting San Antonio. Crta. San Antonio km 14 07820 Sant Antoni de Portmany.</option>
-        <option value="Islas Baleares">Karting Magaluf. Ctra. Sa Porrasa s/n Cala Figuera (junto Aquapark) – 07182 Magaluf – Calvià (Islas Baleares).</option>
-        <option value="Islas Baleares">Karting Aeroclub – Menorca. Crta Maó-Sant Lluis, Km.3 (al lado del aeroclub). Menorca.</option>
-        <option value="Islas Baleares">Go-Karts Santa Eulalia – Ibiza. Ctra. Ibiza – Santa Eulalia km 6. 07840 Santa Eularia des Riu (Ibiza).</option>
-        <option value="Islas Baleares">Club Karting Can Picafort – Mallorca. Ctra. Alcudia-Arta s/n. Santa Margarita (Islas Baleares).</option>
-        <option value="Islas Baleares">Circuito El Arenal – Mallorca. Ctra. Llucmajor, Km. 8. El Arenal (Palma de Mallorca).</option>
-        <option value="Islas Baleares">Karting Castillo Menorca – Menorca. Carretera de Ciutadella a Maò, Km 35, 07760 Ciutadella de Menorca, (Islas Baleares).</option>
-        <option value="Islas Canarias"></option>
-        <option value="Islas Canarias">Gran Karting Club Lanzarote. Ctra. LZ-2 Km.7 Arrecife – Tias.</option>
-        <option value="Islas Canarias">Gran Karting Club Gran Canaria. Ctra. C-812 Km 46. Tarajalillo (San Bartolomé de Tirajana).</option>
-        <option value="Islas Canarias">Karting Tenerife. Ctra. del Cho Km 66. Arona (Tenerife).</option>
-        <option value="La Rioja"></option>
-        <option value="La Rioja">Karting Indoor Logroño. c/ Avda de Aragon 20 – P.I. La Portalada. 26006 Logroño (La Rioja).</option>
-        <option value="Comunidad de Madrid"></option>
-        <option value="Comunidad de Madrid">Karting Soto. Carretera de Colmenar Viejo a Soto Km. 6 (Ctra. Miraflores, Km.40,4). Soto del Real (Madrid)</option>
-        <option value="Comunidad de Madrid">Karting HenaKart. Carretera de Torrejón de Ardoz a Loeches, Km. 3,600. San Fernando de Henares (Madrid).</option>
-        <option value="Comunidad de Madrid">Karting Burgueño. Nacional I, Km. 45,8. El Molar (Madrid).</option>
-        <option value="Comunidad de Madrid">Indoor Ice Karting. Palacio del Hielo CIRCUS, Avda. Juan Carlos !, 46.</option>
-        <option value="Comunidad de Madrid">Go Karts Safari Madrid. Carretera Aldea del Fresno a Villa del Prado M-507, Km. 22. Aldea del Fresno (Madrid).</option>
-        <option value="Comunidad de Madrid">Asupark. Crta.de Boadilla a Villaviciosa M-501, Km. 6.0. Villaviciosa de Odón (Madrid).</option>
-        <option value="Comunidad de Madrid">Carlos Sainz Center (pista indoor) Parque Empresarial Europolis, Calle V 28230 Las Rozas (Madrid).</option>
-        <option value="Comunidad de Madrid">Karting Club Los Santos. Ctra. Santorcaz Km 1n Los de la Humosa Madrid.</option>
-        <option value="Murcia"></option>
-        <option value="Murcia">La Manga Go-Kart. Ctra.de la Manga Km 14. La Manga del Mar Menor.</option>
-        <option value="País Vasco"></option>
-        <option value="País Vasco">Pro-Karting Euskadi. B.º de San Mamés, s/n. Ciervana (Vizcaya).</option>
-        <option value="País Vasco">OcioKart. Ondazarros 3 48840 Güeñes (Vizcaya).</option>
-        <option value="País Vasco">Karting Olaberria. Behekoetxe Haundialdela 20212 Olaberria (Guipuzcoa).</option>
-        <option value="Valencia"></option>
-        <option value="Valencia">Villena Chicharra Karts. Ctra. Villena-Yecla, Km 1.2. 03400 – Villena (Alicante).</option>
-        <option value="Valencia">Karting Raventós Cno. Serratella s/n. Almenara Playa (Castellón de la Plana).</option>
-        <option value="Valencia">Karting La Nucia. Alberca – La Nucia (Alicante).</option>
-        <option value="Valencia">Karting La Font Santa. Ctra. Moraira Teulada, km. 3 03725 Teulada (Alicante).</option>
-        <option value="Valencia">Karting La Cala. Crta. Alicante – Valencia, Km. 116 03500 Benidorm (Alicante).</option>
-        <option value="Valencia">Karting Finestrat. Partida la Folla s/n 03509 Finestrat – Benidorm (Alicante).</option>
-        <option value="Valencia">Go-Karts San Fulgencio. Crta. Alicante – Cartagena, Km. 74 Guardamar del Segura (Alicante).</option>
-        <option value="Valencia">Go Karts Orihuela Costa. Carretera de Cartagena Km. 5.700 03189 Torrevieja (Alicante).</option>
-        <option value="Valencia">Karting Peñiscola Avda. Estación, Km. 0,8 s/n 12598 Peñíscola (Castellón de la Plana).</option>
-        <option value="Valencia">Castellon Benikarts Ctra. N-340 Km 78 Benicassim.</option>
-        <option value="Valencia">Karting Marlon Kart Ctra. N-340 Valencia-Barcelona Km 993 12594 Oropesa del Mar (Castellón de la Plana).</option>
-    </select></br>
 
-    <hr class="my-4">
-
-    <legend>Elegir fechas</legend>
-    <label for="date-init">Fecha inicio</label>
-    <input type="date" name="date" id="date-init" value="today" required="true">
-
-    <hr class="my-4">
-    <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-primary">Tu carrito</span>
-            <span class="badge bg-primary rounded-pill">2</span>
-        </h4>
-        <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                    <h6 class="my-0">Circuito</h6>
-                    <small class="text-muted">Pago de entrada del circuito</small>
-                </div>
-                <span class="text-muted">20€</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                    <h6 class="my-0">Tiempo de alquiler</h6>
-                    <small class="text-muted">Suplemento por días alquilados</small>
-                </div>
-                <span class="text-muted">50€</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between bg-light">
-                <div class="text-success">
-                    <h6 class="my-0">Código de descuento</h6>
-                    <small>UN5SON6CREDITOS</small>
-                </div>
-                <span class="text-success">−50€</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-                <span>Total (EUR)</span>
-                <strong>20€</strong>
-            </li>
-        </ul>
-
-    </div>
-    <hr class="my-4">
-
-    <hr class="my-4">
-
-    <div class="form-check">
+    <form class="needs-validation" novalidate action="reserva-exito.html">
         <fieldset>
-            <legend>Método de pago</legend>
+            <legend>Elegir circuito</legend>
+            <label for="comunidad">Comunidad autónoma</label>
+            <select name="comunidad" id="comunidad" required>
+            <option value=""></option>
+            <option value="op1">Andalucía</option>
+            <option value="op2">Aragón</option>
+            <option value="op3">Asturias</option>
+            <option value="op4">Cantabria</option>
+            <option value="op5">Castilla - La Mancha</option>
+            <option value="op6">Castilla y León</option>
+            <option value="op7">Cataluña</option>
+            <option value="op8">Extremadura</option>
+            <option value="op9">Galicia</option>
+            <option value="op10">Islas Baleares</option>
+            <option value="op11">Islas Canarias</option>
+            <option value="op12">La Rioja</option>
+            <option value="op13">Comunidad de Madrid</option>
+            <option value="op14">Murcia</option>
+            <option value="op15">País Vasco</option>
+            <option value="op16">Valencia</option>
+        </select>
+            <div id="error" class="invalid-feedback">Por favor, seleccione una comunidad autónoma.</div>
+            </br>
+            <label for="Circuito">Circuito</label>
+            <select name="Circuito" id="Circuito" required>
+            <option value=""> </option>
+            <option value="Andalucía"></option>
+            <option value="Andalucía">Karting Roquetas. Ctra. de Alicun Km 5. Roquetas de Mar (Almería).</option>
+            <option value="Andalucía">Karting COPO. Ctra. Almerimar. Centro Comercial COPO. El Ejido (Almería).</option>
+            <option value="Andalucía">Kartodromo de Cartaya. Cartaya (Huelva). Ctra. al rompido s/n Cartaya.</option>
+            <option value="Andalucía">Karting Sevilla. Alcalá del Río (Sevilla). Ctra. A-8006 Km 6 – 41200.</option>
+            <option value="Andalucía">Fórmula Karting Granada. Peligros (Granada). Pista indoor C/ Almería nº2, Pol Ind.
+                de ASEGRA.</option>
+            <option value="Andalucía">Karting Garrucha. Garrucha (Almería). km 1 04630.</option>
+            <option value="Andalucía">Indoor Karting Málaga (pista Indoor) Pol. Ind. San Luis.</option>
+            <option value="Andalucía">Karting del Sol. Almayate, Torre del Mar (Málaga). N-340 Km 268. </option>
+            <option value="Andalucía">Funny Beach – Marbella (Málaga). Ctra. N340 de Cadiz a Málaga Km 184.</option>
+            <option value="Andalucía">Karting Club Málaga. Mijas-Fuengirola. Camino de Coin s/n.</option>
+            <option value="Andalucía">Karting KartCenter Campillos. A-384, Km. 101, 29320 Campillos, Málaga</option>
+            <option value="Aragón"></option>
+            <option value="Aragón">Circuito Internacional de Zuera.</option>
+            <option value="Aragón">La Ciudad del Motor (Motorland).</option>
+            <option value="Asturias"></option>
+            <option value="Asturias">Karting Pola. Carretera de Santander Km. 390. Pola de Siero (Asturias).</option>
+            <option value="Asturias">Circuito Soto de Dueñas. Ctra. Nacional 634. Arriondas Km. 8.</option>
+            <option value="Asturias">Circuito de Asturias. Ctra. Venta del Jamón a Noreña. Ordoño-Siero.</option>
+            <option value="Cantabria"></option>
+            <option value="Cantabria">Karting Los Molinos. c/La Ría s/n. Camping Los Molinos. 39180 Noja (Cantabria).
+            </option>
+            <option value="Cantabria">Karting La Roca. Ctra. del Burco, s/n. 39590 Quijas.</option>
+            <option value="Castilla - La Mancha"></option>
+            <option value="Castilla - La Mancha">Karting Barataria, Vereda de Juan Pac, parcela 166. Fuensalida
+                (Toledo).</option>
+            <option value="Castilla - La Mancha">Karting Correcaminos, Camino Bajolosnuevos s/n 45211 Recas (Toledo).
+            </option>
+            <option value="Castilla - La Mancha">Karting Cabanillas, KM.5 de la carretera CM-9100. Cabanillas del Campo
+                (Guadalajara).</option>
+            <option value="Castilla y León"></option>
+            <option value="Castilla y León">Karting Cabañas Raras. Junto al Pol. Industrial de Cabañas Raras. 24412
+                Cabañas Raras (León)</option>
+            <option value="Castilla y León">Karting El Pinar (Vidanes). Calle Nueva – Vidanes (León)</option>
+            <option value="Castilla y León">Karting Castroponce. Ctra. N-6 Km. 280. 24712 Saludes de Castroponce (León)
+            </option>
+            <option value="Cataluña"></option>
+            <option value="Cataluña">Kartodrom Catalunya. C-17, Km. 17,5. Pol. Ind. El Plà. 08185 Llissà de Vall
+                (Barcelona).</option>
+            <option value="Cataluña">Multipistas Sils. N-II Km 699,5. 17410 Sils.</option>
+            <option value="Cataluña">Circuit d’Osona. Poligon Industrial Malloles, Cabrerès 2.</option>
+            <option value="Cataluña">Karting Club Vendrell. Ctra. N-340 Km 1189.</option>
+            <option value="Cataluña">Karting El Pla. Ctra. C-1313, s/n. 25700 El Pla de Sant Tirs.</option>
+            <option value="Cataluña">ParcMotor. Castelloli (Lleida)</option>
+            <option value="Cataluña">Karting Formula. Carretera de Vidreres, Km 2. Lloret de mar (Girona)</option>
+            <option value="Cataluña">Karting Roses. Ctra. Estacio-Vilajuiga, s/n. Roses (Girona)</option>
+            <option value="Cataluña">Altafulla. Altafulla (Tarragona)</option>
+            <option value="Cataluña">Viladecans Karting Club. Fivaller, 48 1ª 4ª. 08840 Viladecans (Barcelona)</option>
+            <option value="Cataluña">Karting Regencos. Carretera Regencos s/n. 17254 Regencos (Girona)</option>
+            <option value="Cataluña">Indoor Karting Barcelona. Ctra. Laureà Miró, 434 (N-340). 08980 San Feliu de
+                Llobregat (Barcelona)</option>
+            <option value="Cataluña">Karting Salou. Autovía de Salou a Reus Km 2,1. 43840 Salou (Tarragona).</option>
+            <option value="Cataluña">Karting Palamós. Sortie Nord de Palamós. Palamós (Girona).</option>
+            <option value="Cataluña">Karting L’Escala. Ctra. L’Escala-Toroella.</option>
+            <option value="Cataluña">Karting Club Cardedeu. Ctra. Cardedeu a Sant Celoni, Km 5,3. 08440 Cardedeu.
+            </option>
+            <option value="Cataluña">Karting Mora. Comarcas Catalanas, 83. 43740 Mora d’Ebre.</option>
+            <option value="Cataluña">Club Karting Empuriabrava. Zona Aeroport.</option>
+            <option value="Cataluña">Kart Club Cambrils. Verge de Camí, 13. 43850 Cambrils.</option>
+            <option value="Cataluña">Karting Club Blanes. Ctra. Nuevo acceso Costa Brava. 17300 Blanes.</option>
+            <option value="Extremadura"></option>
+            <option value="Extremadura">Cáceres Kart. Carretera de Miajadas, km 20,5. Torremocha (Cáceres)</option>
+            <option value="Galicia"></option>
+            <option value="Galicia">Karting Club Arifran. Ctra. Ferrol-Gijón S/N – Viveiro (Lugo).</option>
+            <option value="Galicia">Paris-Dakart. Playa Mayor – La Lanzada. San Xenxo.</option>
+            <option value="Islas Baleares"></option>
+            <option value="Islas Baleares">Karting San Antonio. Crta. San Antonio km 14 07820 Sant Antoni de Portmany.
+            </option>
+            <option value="Islas Baleares">Karting Magaluf. Ctra. Sa Porrasa s/n Cala Figuera (junto Aquapark) – 07182
+                Magaluf – Calvià (Islas Baleares).</option>
+            <option value="Islas Baleares">Karting Aeroclub – Menorca. Crta Maó-Sant Lluis, Km.3 (al lado del aeroclub).
+                Menorca.</option>
+            <option value="Islas Baleares">Go-Karts Santa Eulalia – Ibiza. Ctra. Ibiza – Santa Eulalia km 6. 07840 Santa
+                Eularia des Riu (Ibiza).</option>
+            <option value="Islas Baleares">Club Karting Can Picafort – Mallorca. Ctra. Alcudia-Arta s/n. Santa Margarita
+                (Islas Baleares).</option>
+            <option value="Islas Baleares">Circuito El Arenal – Mallorca. Ctra. Llucmajor, Km. 8. El Arenal (Palma de
+                Mallorca).</option>
+            <option value="Islas Baleares">Karting Castillo Menorca – Menorca. Carretera de Ciutadella a Maò, Km 35,
+                07760 Ciutadella de Menorca, (Islas Baleares).</option>
+            <option value="Islas Canarias"></option>
+            <option value="Islas Canarias">Gran Karting Club Lanzarote. Ctra. LZ-2 Km.7 Arrecife – Tias.</option>
+            <option value="Islas Canarias">Gran Karting Club Gran Canaria. Ctra. C-812 Km 46. Tarajalillo (San Bartolomé
+                de Tirajana).</option>
+            <option value="Islas Canarias">Karting Tenerife. Ctra. del Cho Km 66. Arona (Tenerife).</option>
+            <option value="La Rioja"></option>
+            <option value="La Rioja">Karting Indoor Logroño. c/ Avda de Aragon 20 – P.I. La Portalada. 26006 Logroño (La
+                Rioja).</option>
+            <option value="Comunidad de Madrid"></option>
+            <option value="Comunidad de Madrid">Karting Soto. Carretera de Colmenar Viejo a Soto Km. 6 (Ctra.
+                Miraflores, Km.40,4). Soto del Real (Madrid)</option>
+            <option value="Comunidad de Madrid">Karting HenaKart. Carretera de Torrejón de Ardoz a Loeches, Km. 3,600.
+                San Fernando de Henares (Madrid).</option>
+            <option value="Comunidad de Madrid">Karting Burgueño. Nacional I, Km. 45,8. El Molar (Madrid).</option>
+            <option value="Comunidad de Madrid">Indoor Ice Karting. Palacio del Hielo CIRCUS, Avda. Juan Carlos !, 46.
+            </option>
+            <option value="Comunidad de Madrid">Go Karts Safari Madrid. Carretera Aldea del Fresno a Villa del Prado
+                M-507, Km. 22. Aldea del Fresno (Madrid).</option>
+            <option value="Comunidad de Madrid">Asupark. Crta.de Boadilla a Villaviciosa M-501, Km. 6.0. Villaviciosa de
+                Odón (Madrid).</option>
+            <option value="Comunidad de Madrid">Carlos Sainz Center (pista indoor) Parque Empresarial Europolis, Calle V
+                28230 Las Rozas (Madrid).</option>
+            <option value="Comunidad de Madrid">Karting Club Los Santos. Ctra. Santorcaz Km 1n Los de la Humosa Madrid.
+            </option>
+            <option value="Murcia"></option>
+            <option value="Murcia">La Manga Go-Kart. Ctra.de la Manga Km 14. La Manga del Mar Menor.</option>
+            <option value="País Vasco"></option>
+            <option value="País Vasco">Pro-Karting Euskadi. B.º de San Mamés, s/n. Ciervana (Vizcaya).</option>
+            <option value="País Vasco">OcioKart. Ondazarros 3 48840 Güeñes (Vizcaya).</option>
+            <option value="País Vasco">Karting Olaberria. Behekoetxe Haundialdela 20212 Olaberria (Guipuzcoa).</option>
+            <option value="Valencia"></option>
+            <option value="Valencia">Villena Chicharra Karts. Ctra. Villena-Yecla, Km 1.2. 03400 – Villena (Alicante).
+            </option>
+            <option value="Valencia">Karting Raventós Cno. Serratella s/n. Almenara Playa (Castellón de la Plana).
+            </option>
+            <option value="Valencia">Karting La Nucia. Alberca – La Nucia (Alicante).</option>
+            <option value="Valencia">Karting La Font Santa. Ctra. Moraira Teulada, km. 3 03725 Teulada (Alicante).
+            </option>
+            <option value="Valencia">Karting La Cala. Crta. Alicante – Valencia, Km. 116 03500 Benidorm (Alicante).
+            </option>
+            <option value="Valencia">Karting Finestrat. Partida la Folla s/n 03509 Finestrat – Benidorm (Alicante).
+            </option>
+            <option value="Valencia">Go-Karts San Fulgencio. Crta. Alicante – Cartagena, Km. 74 Guardamar del Segura
+                (Alicante).</option>
+            <option value="Valencia">Go Karts Orihuela Costa. Carretera de Cartagena Km. 5.700 03189 Torrevieja
+                (Alicante).</option>
+            <option value="Valencia">Karting Peñiscola Avda. Estación, Km. 0,8 s/n 12598 Peñíscola (Castellón de la
+                Plana).</option>
+            <option value="Valencia">Castellon Benikarts Ctra. N-340 Km 78 Benicassim.</option>
+            <option value="Valencia">Karting Marlon Kart Ctra. N-340 Valencia-Barcelona Km 993 12594 Oropesa del Mar
+                (Castellón de la Plana).</option>
+        </select>
+            <div class="invalid-feedback">Por favor, seleccione un circuito.</div>
 
-            <input type="radio" id="cash" name="paymentMethod" type="radio" class="form-check-input" checked onclick="EnableDisableTB()">
-            <label class="form-check-label" for="debit">Efectivo</label><br />
-
-            <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" onclick="EnableDisableTB()">
-            <label class="form-check-label" for="credit">Tarjeta de crédito</label><br />
-
+            </br>
         </fieldset>
-    </div>
-
-    <hr class="my-4">
-
-    <legend>Datos bancarios</legend>
-
-    <div class="row gy-3">
-        <div class="col-md-6">
-            <label for="cc-name" class="form-label">Nombre completo del propietario</label>
-            <input type="text" class="form-control" id="cc-name" disabled="disabled" placeholder="" required>
+        <hr class="my-4">
+        <fieldset>
+            <legend>Elegir fechas</legend>
+            <label for="date-init">Fecha inicio</label>
+            <input type="date" name="date" id="date-init" value="today" required="true">
             <div class="invalid-feedback">
-                Nombre completo requerido
+                Por favor, seleccione una fecha.
             </div>
-            <label for="cc-number" class="form-label">Número de tarjeta</label>
-            <input type="text" class="form-control" id="cc-number" disabled="disabled" placeholder="" required>
-            <div class="invalid-feedback">
-                Numero de tarjeta de crédito requerido
+
+            <hr class="my-4">
+            <div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">Tu carrito</span>
+                    <span class="badge bg-primary rounded-pill">2</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Circuito</h6>
+                            <small class="text-muted">Pago de entrada del circuito</small>
+                        </div>
+                        <span class="text-muted">20€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Tiempo de alquiler</h6>
+                            <small class="text-muted">Suplemento por días alquilados</small>
+                        </div>
+                        <span class="text-muted">50€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Código de descuento</h6>
+                            <small>UN5SON6CREDITOS</small>
+                        </div>
+                        <span class="text-success">−50€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (EUR)</span>
+                        <strong>20€</strong>
+                    </li>
+                </ul>
+
             </div>
+            <hr class="my-4">
+        </fieldset>
+        <hr class="my-4">
+
+        <div class="form-check">
+            <fieldset>
+                <legend>Método de pago</legend>
+
+                <input type="radio" id="cash" name="paymentMethod" type="radio" class="form-check-input" checked onclick="EnableDisableTB()">
+                <label class="form-check-label" for="cash">Efectivo</label><br />
+
+                <input type="radio" id="credit" name="paymentMethod" type="radio" class="form-check-input" onclick="EnableDisableTB()">
+                <label class="form-check-label" for="credit">Tarjeta de crédito</label><br />
+
+            </fieldset>
         </div>
-    </div>
 
-    <div class="row gy-3">
-        <div class="col-md-2">
-            <label for="cc-month" class="form-label">Mes</label>
-            <select class="form-select" name="Month" id="cc-month" disabled="disabled" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-            </select>
-            <div class="invalid-feedback">
-                Mes de caducidad requerido
-            </div>
-        </div>
-        <div class="col-md-2">
-            <label for="cc-year" class="form-label">Año</label>
-            <select class="form-select" name="Year" id="cc-year" disabled="disabled" required>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
-                <option>2026</option>
-                <option>2027</option>
-                <option>2028</option>
-                <option>2029</option>
-                <option>2030</option>
-            </select>
-            <div class="invalid-feedback">
-                Año de caducidad requerido
-            </div>
-        </div>
-        <div class="col-md-2">
-            <label for="cc-cvv" class="form-label">CVV</label>
-            <div class="input-group">
-                <span class="input-group-text" id="cc-cvv-informacion" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="Es un código de 3 dígitos que aparece en la parte posterior de las tarjetas Visa y Mastercard.</br>Para las American Express es un código de 4 dígitos situado en la parte frontal.">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                    </svg>
-                </span>
-                <input type="text" class="form-control" id="cc-cvv" disabled="disabled" placeholder="" required>
-            </div>
-            <div class="invalid-feedback">
-                Código de seguridad requerido
-            </div>
-        </div>
-    </div>
+        <hr class="my-4">
+        <fieldset>
+            <legend>Datos bancarios</legend>
 
-    <hr class="my-4">
+            <div class="row gy-3">
+                <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nombre completo del propietario</label>
+                    <input type="text" class="form-control" id="cc-name" disabled="disabled" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Nombre completo requerido
+                    </div>
+                    <label for="cc-number" class="form-label">Número de tarjeta</label>
+                    <input type="text" class="form-control" id="cc-number" disabled="disabled" placeholder="" required>
+                    <div class="invalid-feedback">
+                        Numero de tarjeta de crédito requerido
+                    </div>
+                </div>
+            </div>
 
-    <a href="reserva-exito.html"><button class="btn btn-primary" type="submit">Reservar</button></a>
+            <div class="row gy-3">
+                <div class="col-md-2">
+                    <label for="cc-month" class="form-label">Mes</label>
+                    <select class="form-select" name="Month" id="cc-month" disabled="disabled" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                    <div class="invalid-feedback">
+                        Mes de caducidad requerido
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="cc-year" class="form-label">Año</label>
+                    <select class="form-select" name="Year" id="cc-year" disabled="disabled" required>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                </select>
+                    <div class="invalid-feedback">
+                        Año de caducidad requerido
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="cc-cvv-informacion" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="Es un código de 3 dígitos que aparece en la parte posterior de las tarjetas Visa y Mastercard.</br>Para las American Express es un código de 4 dígitos situado en la parte frontal.">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                    </span>
+                        <input type="text" class="form-control" id="cc-cvv" disabled="disabled" placeholder="" required>
+                    </div>
+                    <div class="invalid-feedback">
+                        Código de seguridad requerido
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <hr class="my-4">
+
+        <a href="reserva-exito.html"><button class="btn btn-primary" type="submit">Reservar</button></a>
+    </form>
     <a href="reservar.html"><button class="btn btn-secondary" type="submit">Cancelar</button></a>
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
-                <a href="https://getbootstrap.com/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="black">
+                <!--   <a href="https://getbootstrap.com/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> -->
+                <svg class="bi d-block mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="black">
                         <path
                             d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
                         <path
                             d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
                         <use xlink:href="#bootstrap"></use>
                     </svg>
-                </a>
+                <!--     </a>  -->
                 <span class="text-muted">© 2021 Company, Inc</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -404,6 +456,7 @@
             </ul>
         </footer>
     </div>
+    <script src="form-validation.js"></script>
 </body>
 
 </html>
