@@ -106,9 +106,11 @@
     <hr class="my-4">
 	
 	
-    <legend>Elegir circuito</legend>
+   
 	
     <form class="needs-validation" novalidate action="reserva-exito.html">
+	<fieldset>
+	 <legend>Elegir circuito</legend>
         <label for="comunidad">Comunidad autónoma</label>
         <select name="comunidad" id="comunidad" required>
             <option value=""></option>
@@ -269,7 +271,7 @@
         </select>
         <div id="error" class="invalid-feedback">Por favor, seleccione un circuito.</div>
         </br>
-
+		</fieldset>
         <hr class="my-4">
 
         <legend>Selecciona un vehículo</legend>
@@ -295,7 +297,7 @@
         <br>
 
         <hr class="my-4">
-
+		<fieldset>
         <legend>Elegir fecha</legend>
         <label for="date-init">Fecha</label>
 
@@ -347,6 +349,7 @@
             </ul>
 
         </div>
+		</fieldset>
         <hr class="my-4">
         <div class="form-check">
             <fieldset>
@@ -364,7 +367,7 @@
         </div>
 
         <hr class="my-4">
-
+		<fieldset>
         <legend>Datos bancarios</legend>
 
         <div class="row gy-3">
@@ -441,7 +444,7 @@
                 </div>
             </div>
         </div>
-
+		</fieldset>
         <hr class="my-4">
 
         <a href="reserva-exito.html"><button class="btn btn-primary" type="submit">Reservar</button></a>
